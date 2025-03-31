@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: 5ae1a44db69a6cb4dbe5cc5db75a63b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3416971237112630630
+    second: RandallWalkSpriteSheet_OG_0
+  - first:
+      213: -5361296670483860399
+    second: RandallWalkSpriteSheet_OG_1
+  - first:
+      213: 7505944656383504692
+    second: RandallWalkSpriteSheet_OG_2
+  - first:
+      213: -770173098744731278
+    second: RandallWalkSpriteSheet_OG_3
+  - first:
+      213: -2100828013809088254
+    second: RandallWalkSpriteSheet_OG_4
+  - first:
+      213: 8637675375367682022
+    second: RandallWalkSpriteSheet_OG_5
+  - first:
+      213: 1592362729687127002
+    second: RandallWalkSpriteSheet_OG_6
+  - first:
+      213: -4099753381211956640
+    second: RandallWalkSpriteSheet_OG_7
+  - first:
+      213: 890580790632535335
+    second: RandallWalkSpriteSheet_OG_8
+  - first:
+      213: -8013487517365883819
+    second: RandallWalkSpriteSheet_OG_9
+  - first:
+      213: -9190955300515520004
+    second: RandallWalkSpriteSheet_OG_10
+  - first:
+      213: -7349802026697995412
+    second: RandallWalkSpriteSheet_OG_11
+  - first:
+      213: 4122098185417664463
+    second: RandallWalkSpriteSheet_OG_12
+  - first:
+      213: 8699479724335923486
+    second: RandallWalkSpriteSheet_OG_13
+  - first:
+      213: -8772379735244140836
+    second: RandallWalkSpriteSheet_OG_14
+  - first:
+      213: 3708523900113410046
+    second: RandallWalkSpriteSheet_OG_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 801
+        width: 74
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92bc2483ca7490d0800000000000000
+      internalID: -3416971237112630630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 801
+        width: 98
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15433546519d895b0800000000000000
+      internalID: -5361296670483860399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 801
+        width: 92
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431fa7395e87a2860800000000000000
+      internalID: 7505944656383504692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_3
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 801
+        width: 92
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27922c1b5abcf45f0800000000000000
+      internalID: -770173098744731278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_4
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 801
+        width: 98
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20948b65d0c58d2e0800000000000000
+      internalID: -2100828013809088254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_5
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 801
+        width: 74
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7fde15dff2fd770800000000000000
+      internalID: 8637675375367682022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_6
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 801
+        width: 74
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad392984775391610800000000000000
+      internalID: 1592362729687127002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_7
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 801
+        width: 74
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a972e6500ca17c0800000000000000
+      internalID: -4099753381211956640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 595
+        width: 74
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7255075b28afb5c00800000000000000
+      internalID: 890580790632535335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 595
+        width: 98
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c216b6f8f5ac090800000000000000
+      internalID: -8013487517365883819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_10
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 595
+        width: 92
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1674699da237080800000000000000
+      internalID: -9190955300515520004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_11
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 596
+        width: 92
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b48356ff1400a90800000000000000
+      internalID: -7349802026697995412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_12
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 596
+        width: 98
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc72a17b572a43930800000000000000
+      internalID: 4122098185417664463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_13
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 596
+        width: 74
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1181cba7b2cab870800000000000000
+      internalID: 8699479724335923486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_14
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 597
+        width: 74
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde00fddb1f324680800000000000000
+      internalID: -8772379735244140836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RandallWalkSpriteSheet_OG_15
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 598
+        width: 74
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef75e4ba6d2577330800000000000000
+      internalID: 3708523900113410046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RandallWalkSpriteSheet_OG_0: -3416971237112630630
+      RandallWalkSpriteSheet_OG_1: -5361296670483860399
+      RandallWalkSpriteSheet_OG_10: -9190955300515520004
+      RandallWalkSpriteSheet_OG_11: -7349802026697995412
+      RandallWalkSpriteSheet_OG_12: 4122098185417664463
+      RandallWalkSpriteSheet_OG_13: 8699479724335923486
+      RandallWalkSpriteSheet_OG_14: -8772379735244140836
+      RandallWalkSpriteSheet_OG_15: 3708523900113410046
+      RandallWalkSpriteSheet_OG_2: 7505944656383504692
+      RandallWalkSpriteSheet_OG_3: -770173098744731278
+      RandallWalkSpriteSheet_OG_4: -2100828013809088254
+      RandallWalkSpriteSheet_OG_5: 8637675375367682022
+      RandallWalkSpriteSheet_OG_6: 1592362729687127002
+      RandallWalkSpriteSheet_OG_7: -4099753381211956640
+      RandallWalkSpriteSheet_OG_8: 890580790632535335
+      RandallWalkSpriteSheet_OG_9: -8013487517365883819
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
