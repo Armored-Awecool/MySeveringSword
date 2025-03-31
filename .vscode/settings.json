@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "My Severing Sword.sln"
+    "dotnet.defaultSolution": "MySeveringSword.sln"
 }

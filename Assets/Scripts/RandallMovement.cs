@@ -502,6 +502,18 @@ public class RandallMovement : MonoBehaviour
             SceneManager.LoadScene("Zone2");
             SceneManager.UnloadSceneAsync("Village");
         }
+         else if (collision.gameObject.tag == "Zone3Trigger")
+        {
+            
+            SceneManager.LoadScene("zone3");
+            SceneManager.UnloadSceneAsync("Zone2");
+        }
+        /*else if (collision.gameObject.tag == "main menu trigger")
+        {
+            
+            SceneManager.LoadScene("MainMenu");
+            SceneManager.UnloadSceneAsync("zone3");
+        }*/
     }
 
     public void hpChecker()

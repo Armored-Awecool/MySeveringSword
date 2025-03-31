@@ -760,9 +760,13 @@ MonoBehaviour:
   pinkEye: {fileID: 0}
   purpleEye: {fileID: 0}
   bothEye: {fileID: 0}
+  leftFoot: {fileID: 0}
+  rightFoot: {fileID: 0}
   eyeState: 0
   menuShown: 0
-  animator: {fileID: 2203965775782912487}
+  leftFootanimator: {fileID: 409360387055281152}
+  rightFootanimator: {fileID: 5147540680550001616}
+  bodyanimator: {fileID: 9115213722074324964}
   position: 0
   VITtext: {fileID: 0}
   MNAtext: {fileID: 0}
