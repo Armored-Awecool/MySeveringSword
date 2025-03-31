@@ -69,6 +69,10 @@ public class RandallMovement : MonoBehaviour
     public GameObject gameOverScreen;
     public AudioSource grassStep;
     public GameObject BekaStoreMenu;
+    public Material damageShader;
+    private bool damaged;
+    private float damageTime = 0.3f;
+    private float damageTimer;
 
     public string direction = "right";
     void Start()
@@ -93,6 +97,8 @@ public class RandallMovement : MonoBehaviour
         firecooldown = 2;
         Randall = this.gameObject;
         Randall.SetActive(true);
+        damaged = false;
+        damageShader.SetVector("_Fade", new Vector3(1.0f, 0.0f, 0.0f));
     }
 
     void setStats()
@@ -146,6 +152,15 @@ public class RandallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(damaged)
+        {
+            damageTimer += Time.deltaTime;
+            if(damageTimer> damageTime)
+            {
+                damageShader.SetVector("_Fade", new Vector3(1.0f, 0.0f, 0.0f));
+                damaged = false;
+            }
+        }
         cooldownreset += Time.deltaTime;
         manarecover += Time.deltaTime;
         if (manarecover > 5)
@@ -394,9 +409,9 @@ public class RandallMovement : MonoBehaviour
         {
             FaerRight.SetActive(true);
             Invoke("hideSword", .3f);
-            /*if (TheInventory.getCurrentWeapon().name == "Fae'r")
+            if (TheInventory.getCurrentWeapon().name == "Fae'r")
             {
-                if (animator.GetBool("facingRight") == true)
+                /*if (bodyanimator.GetBool("facingRight") == true)
                 {
                     FaerRight.SetActive(true);
                 }
@@ -405,7 +420,8 @@ public class RandallMovement : MonoBehaviour
                     FaerLeft.SetActive(true);
                 }
                 Invoke("hideSword", .3f);
-            }*/
+                */
+            }
             bodyanimator.SetTrigger("attack");
         }
 
@@ -463,6 +479,10 @@ public class RandallMovement : MonoBehaviour
         if (collision.gameObject.tag == "Spirit" || collision.gameObject.tag == "Meanie")
         {
             changeHP(-1);
+            damageShader.SetVector("_Fade", new Vector3(20.0f, 0.0f, 0.0f));
+            damaged = true;
+            damageTimer = 0.0f;
+
             if (direction == "right")
             {
                 transform.Translate(Vector2.right * -2);
@@ -476,6 +496,9 @@ public class RandallMovement : MonoBehaviour
         else if (collision.gameObject.tag == "MeanieShot")
         {
             changeHP(-4);
+            damageShader.SetVector("_Fade", new Vector3(20.0f, 0.0f, 0.0f));
+            damaged = true;
+            damageTimer = 0.0f;
             hpChecker();
         }
         else if (collision.gameObject.tag == "LoadVillageLeft")
