@@ -5803,8 +5803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93201c0673b9bc641a35abadf3b192f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 3358661278136007470}
-  offset: {x: 0, y: 0, z: 0}
+  Player: {fileID: 51015093}
+  offset: {x: 1, y: 2, z: -1}
 --- !u!222 &2239623387997488434
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11984,6 +11984,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1060855677533865256, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
+    - target: {fileID: 2455220247901163461, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
     - target: {fileID: 3125342188434312155, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.410145
@@ -12024,10 +12032,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3353689043642879300, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
+    - target: {fileID: 3597680381218134507, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
     - target: {fileID: 4294019506434479032, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: m_Name
       value: Player_Alice
       objectReference: {fileID: 0}
+    - target: {fileID: 4968683348355485903, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
     - target: {fileID: 5733962797468046649, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: menu
       value: 
@@ -12137,6 +12157,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1751426875}
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: damageShader
+      value: 
+      objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: equipToolTip
       value: 
       objectReference: {fileID: 2986205250228114537}
@@ -12160,6 +12184,10 @@ PrefabInstance:
       propertyPath: CheckPoints.Array.data[1]
       value: 
       objectReference: {fileID: 7842588591482403505}
+    - target: {fileID: 6902112275939876248, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13586,6 +13614,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 2885510173726310099}
   grassStep: {fileID: 863834534232673590}
   BekaStoreMenu: {fileID: 0}
+  damageShader: {fileID: 0}
   direction: right
 --- !u!114 &6044378443381283554
 MonoBehaviour:
