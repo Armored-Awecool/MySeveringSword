@@ -79,6 +79,7 @@ public class WaypointNav : MonoBehaviour
     {
         if (hp <= 0)
         {
+            Randall.xp += 3;
             Destroy(gameObject);
         }
     }

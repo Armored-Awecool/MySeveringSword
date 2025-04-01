@@ -239,7 +239,7 @@ public class RandallMovement : MonoBehaviour
     }
     public void setMenus()
     {
-        leveltext.text = "Level " + level;
+        leveltext.text = "Level " + level + " EXP: " + xp;
         VITtext.text = "VIT: " + VIT;
         MNAtext.text = "MNA: " + MNA;
         EGYtext.text = "EGY: " + EGY;
@@ -269,8 +269,6 @@ public class RandallMovement : MonoBehaviour
         item[] deposit = TheInventory.deposit(TheInventory.inventory);
         for (int i = 0; i < 10; i++)
         {
-            Debug.Log(items[i] == null);
-            Debug.Log(items[i].GetComponentInChildren<TextMeshProUGUI>() == null);
             items[i].GetComponentInChildren<TextMeshProUGUI>().text = "Empty";
             spells[i].GetComponentInChildren<TextMeshProUGUI>().text = "Empty";
         }
