@@ -19618,6 +19618,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 51015093}
@@ -20044,6 +20048,10 @@ PrefabInstance:
       propertyPath: Randall
       value: 
       objectReference: {fileID: 51015092}
+    - target: {fileID: 3892483728068364829, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
+      propertyPath: chaseDis
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3892483728068364829, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 

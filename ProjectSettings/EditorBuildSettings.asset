@@ -8,16 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Backups/MainMenuBackup.unity
     guid: 9a280fe776870ac4da612cb298efaa88
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: aaac1908536a97f4494ab5ab65378f83
+  - enabled: 1
     path: Assets/Scenes/SeveringSword.unity
     guid: d3499c0e7e7b31648ba42f092218187e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Backups/VillageBackup.unity
     guid: 8d45619cc5c67f14d906855d8b33b7bf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Backups/Zone2Backup.unity
     guid: 39c2a84ef5516894891e64195ea67748
   - enabled: 1
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Village.unity
     guid: 3f1c2a36dac91234b872d3c6ec0bd891
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: aaac1908536a97f4494ab5ab65378f83
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 1a71d604c33dd0c44a60bac0a1cbb4c0
