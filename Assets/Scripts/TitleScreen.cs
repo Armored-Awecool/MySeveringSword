@@ -33,7 +33,7 @@ public class TitleScreen : MonoBehaviour
         {
             if (theStory.transform.position.y < endScroll)
             {
-                theStory.transform.Translate(Vector2.up * 1f);
+                theStory.transform.Translate(Vector2.up * 10f);
             }
             if (Input.GetButton("Cancel"))
             {
