@@ -73,6 +73,7 @@ public class RandallMovement : MonoBehaviour
     private bool damaged;
     private float damageTime = 0.3f;
     private float damageTimer;
+    public GameObject[] hearts;
 
     public string direction = "right";
     void Start()
@@ -226,8 +227,15 @@ public class RandallMovement : MonoBehaviour
         {
             currentVIT = VIT;
         }
-        CurrentHP.text = "VIT: " + currentVIT + "/" + VIT;
+        for (int i = 0; i < (VIT - currentVIT); i++){
+            hearts[hearts.Length-1-i].SetActive(false);
+        }
+        for (int i = 0; i < currentVIT; i++){
+            hearts[i].SetActive(true);
+        }
+        //CurrentHP.text = "VIT: " + currentVIT + "/" + VIT;
     }
+
     public void changeMNA(int change)
     {
         currentMNA += change;
