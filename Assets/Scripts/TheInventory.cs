@@ -6,7 +6,7 @@ using UnityEngine;
 public class TheInventory : MonoBehaviour
 {
     //LinkedList<item> inventory = new LinkedList<item>();
-    public item[] equip = new item[3];
+    public item[] equip = new item[6];
     public item currentWeapon;
     public RandallMovement Randall;
     public GameObject FullInventory;
@@ -83,6 +83,18 @@ public class TheInventory : MonoBehaviour
                 else if (tempitem.name == currentequips[3])
                 {
                     equip[2] = tempitem;
+                }
+                else if (tempitem.name == currentequips[4])
+                {
+                    equip[3] = tempitem;
+                }
+                else if (tempitem.name == currentequips[5])
+                {
+                    equip[4] = tempitem;
+                }
+                else if (tempitem.name == currentequips[6])
+                {
+                    equip[5] = tempitem;
                 }
 
                 current = saveFile.ReadLine();

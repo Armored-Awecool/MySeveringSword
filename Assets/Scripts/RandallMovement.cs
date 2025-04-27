@@ -174,7 +174,10 @@ public class RandallMovement : MonoBehaviour
         {
             if (TheInventory.getQuickItems()[0] != null)
             {
-                bodyanimator.SetTrigger("castSpell");
+                if (TheInventory.getQuickItems()[0].itemType == "spell")
+                {
+                    bodyanimator.SetTrigger("castSpell");
+                }
                 useItem(0);
                 
             }
@@ -183,7 +186,10 @@ public class RandallMovement : MonoBehaviour
         {
             if (TheInventory.getQuickItems()[1] != null)
             {
-                bodyanimator.SetTrigger("castSpell");
+                if (TheInventory.getQuickItems()[1].itemType == "spell")
+                {
+                    bodyanimator.SetTrigger("castSpell");
+                }
                 useItem(1);
             
             }
@@ -192,8 +198,47 @@ public class RandallMovement : MonoBehaviour
         {
             if (TheInventory.getQuickItems()[2] != null)
             {
-                bodyanimator.SetTrigger("castSpell");
+                if (TheInventory.getQuickItems()[2].itemType == "spell")
+                {
+                    bodyanimator.SetTrigger("castSpell");
+                }
                 useItem(2);
+                
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            if (TheInventory.getQuickItems()[3] != null)
+            {
+                if (TheInventory.getQuickItems()[3].itemType == "spell")
+                {
+                    bodyanimator.SetTrigger("castSpell");
+                }
+                useItem(3);
+                
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            if (TheInventory.getQuickItems()[4] != null)
+            {
+                if (TheInventory.getQuickItems()[4].itemType == "spell")
+                {
+                    bodyanimator.SetTrigger("castSpell");
+                }
+                useItem(4);
+                
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            if (TheInventory.getQuickItems()[5] != null)
+            {
+                if (TheInventory.getQuickItems()[5].itemType == "spell")
+                {
+                    bodyanimator.SetTrigger("castSpell");
+                }
+                useItem(5);
                 
             }
         }
@@ -304,8 +349,8 @@ public class RandallMovement : MonoBehaviour
 
         item[] temp = TheInventory.getQuickItems();
         item equip = TheInventory.getCurrentWeapon();
-        string[] slots = new string[3];
-        for (int i = 0; i < 3; i++)
+        string[] slots = new string[6];
+        for (int i = 0; i < 6; i++)
         {
             if (temp[i] != null)
             {
@@ -317,7 +362,12 @@ public class RandallMovement : MonoBehaviour
             }
         }
 
-        equipToolTip.text = "Weapon: " + equip.name + "\r\nSlot 1: \r\n" + slots[0] + "\r\nSlot 2: \r\n" + slots[1] + "\r\nSlot 3: \r\n" + slots[2];
+        equipToolTip.text = "Weapon: " + equip.name + "\r\nSlot 1:      Slot 4: \r\n" + 
+        slots[0] + "      " + slots[3] +
+        "\r\nSlot 2:      Slot 5: \r\n" +
+        slots[1] + "      " + slots[4] +
+        "\r\nSlot 3:      Slot 6: \r\n" +
+        slots[2] + "      " + slots[5];
 
         item[] deposit = TheInventory.deposit(TheInventory.inventory);
         for (int i = 0; i < 10; i++)
@@ -404,6 +454,14 @@ public class RandallMovement : MonoBehaviour
                 cooldownreset = 0;
                 changeMNA(-3);
             }
+        }
+        else if (getItemSlot(slot) == "Sesta") // RIGHT HERE ALICE IS WHERE YOU CAN ADD FIRE AND ICE SPELLS
+        {
+            Debug.Log("Sesta works");
+        }
+        else if (getItemSlot(slot) == "Crista")
+        {
+            Debug.Log("Crista works");
         }
 
         item[] quickitems = TheInventory.getQuickItems();
@@ -624,8 +682,8 @@ public class RandallMovement : MonoBehaviour
         {
             saveFile.WriteLine(level+":"+VIT+":"+MNA+":"+EGY+":"+STR+":"+AGI+":"+INT+":"+DEF+":"+LUK+":"+xp);
             saveFile.WriteLine(savespot);
-            string[] equipsRecord = new string[3];
-            for (int i = 0; i < 3; i++)
+            string[] equipsRecord = new string[6];
+            for (int i = 0; i < 6; i++)
             {
                 if (TheInventory.equip[i] != null)
                 {
@@ -636,7 +694,7 @@ public class RandallMovement : MonoBehaviour
                     equipsRecord[i] = "Empty";
                 }
             }
-            saveFile.WriteLine(TheInventory.currentWeapon.name + ":" + equipsRecord[0] + ":" + equipsRecord[1] + ":" + equipsRecord[2]);
+            saveFile.WriteLine(TheInventory.currentWeapon.name + ":" + equipsRecord[0] + ":" + equipsRecord[1] + ":" + equipsRecord[2] + ":" + equipsRecord[3] + ":" + equipsRecord[4] + ":" + equipsRecord[5]);
             item[] deposit = TheInventory.deposit(TheInventory.inventory);
             for (int i = 0; i < TheInventory.getSize(TheInventory.inventory); i++)
             {

@@ -59,12 +59,14 @@ public class TitleScreen : MonoBehaviour
         {
             saveFile.WriteLine("1:12:12:5:7:7:7:7:5:0");
             saveFile.WriteLine("0");
-            saveFile.WriteLine("Fae'r:Asha:Litha:Empty");
+            saveFile.WriteLine("Fae'r:Asha:Litha:Sesta:Crista:Empty:Empty");
             saveFile.WriteLine("sword:Fae'r:A sword forged by Randall himself. It's spirit has been awakened by him as well.:3:3:4:Beautiful:Light:2");
             saveFile.WriteLine("Empty");
             saveFile.WriteLine("Empty");
             saveFile.WriteLine("spell:Asha:The Lowest Dark Magic:0:0:0:None:Dark:0");
             saveFile.WriteLine("spell:Litha:The Lowest Light Magic:0:0:0:None:Light:0");
+            saveFile.WriteLine("spell:Sesta:The Lowest Fire Magic:0:0:0:None:Fire:0");
+            saveFile.WriteLine("spell:Crista:The Lowest Crista Magic:0:0:0:None:Crisa:0");
             saveFile.Close();
         }
         theIntro();
