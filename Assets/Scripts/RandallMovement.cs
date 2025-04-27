@@ -22,9 +22,8 @@ public class RandallMovement : MonoBehaviour
     public GameObject rightFoot;
     public int eyeState; //0 is none, 1 is pink, 2 is purple, 3 is both
     public bool menuShown;
-    public Animator leftFootanimator;
-    public Animator rightFootanimator;
     public Animator bodyanimator;
+    public Animator animator;
     public float position;
     public TextMeshProUGUI VITtext;
     public TextMeshProUGUI MNAtext;
@@ -75,19 +74,22 @@ public class RandallMovement : MonoBehaviour
     private float damageTimer;
     public GameObject[] hearts;
 
+    //animation values
+    public bool walking;
+    public bool jumping;
+    public bool attacking;
+    public bool hurt;
+    public bool casting;
+    public bool landing;
+
     public string direction = "right";
     void Start()
     {
-        leftFootanimator = GetComponent<Animator>();
-        rightFootanimator = GetComponent<Animator>();
-        bodyanimator = GetComponent<Animator>();
         inventory.SetActive(false);
         menuShown = false;
         eyeState = 0;
         speed = 5.0f;
         jumpSpeed = 10.0f;
-        leftFootanimator.SetBool("motion", false);
-        rightFootanimator.SetBool("motion", false);
         position = rb.position.x;
         TheInventory = GetComponent<TheInventory>();
         LoadSaveGame();
@@ -153,6 +155,49 @@ public class RandallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            bodyanimator.SetTrigger("attack");
+            Debug.Log("attack");         
+        }
+        if (onGround == true)
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                bodyanimator.SetTrigger("jump");
+                rb.AddForce(Vector2.up * jumpSpeed * 2f, ForceMode2D.Impulse);
+                onGround = false;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (TheInventory.getQuickItems()[0] != null)
+            {
+                bodyanimator.SetTrigger("castSpell");
+                useItem(0);
+                
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (TheInventory.getQuickItems()[1] != null)
+            {
+                bodyanimator.SetTrigger("castSpell");
+                useItem(1);
+            
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (TheInventory.getQuickItems()[2] != null)
+            {
+                bodyanimator.SetTrigger("castSpell");
+                useItem(2);
+                
+            }
+        }
+
         if(damaged)
         {
             damageTimer += Time.deltaTime;
@@ -382,6 +427,15 @@ public class RandallMovement : MonoBehaviour
         {movement = Input.GetAxis("Horizontal") * speed * Time.deltaTime;}
         else
         {movement = Input.GetAxis("Horizontal") * speed * Time.deltaTime * -1;}
+        if(onGround == true && movement >0)
+            {
+                walking = true;
+            }
+        else
+        {
+            walking = false;
+        }
+        animator.SetBool("walking", walking);
         transform.Translate(Vector2.right * movement);
 
         if (Input.GetAxis("Horizontal") > 0)
@@ -396,6 +450,7 @@ public class RandallMovement : MonoBehaviour
             {
                 grassStep.Play();
             }
+            
         }
         else if (Input.GetAxis("Horizontal") < 0)
         {
@@ -411,56 +466,11 @@ public class RandallMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.E))
-        {
-            FaerRight.SetActive(true);
-            Invoke("hideSword", .3f);
-            if (TheInventory.getCurrentWeapon().name == "Fae'r")
-            {
-                /*if (bodyanimator.GetBool("facingRight") == true)
-                {
-                    FaerRight.SetActive(true);
-                }
-                else
-                {
-                    FaerLeft.SetActive(true);
-                }
-                Invoke("hideSword", .3f);
-                */
-            }
-            bodyanimator.SetTrigger("attack");
-        }
+        
 
-        if (Input.GetKey(KeyCode.Alpha1))
-        {
-            if (TheInventory.getQuickItems()[0] != null)
-            {
-                useItem(0);
-            }
-        }
-        else if (Input.GetKey(KeyCode.Alpha2))
-        {
-            if (TheInventory.getQuickItems()[1] != null)
-            {
-                useItem(1);
-            }
-        }
-        else if (Input.GetKey(KeyCode.Alpha3))
-        {
-            if (TheInventory.getQuickItems()[2] != null)
-            {
-                useItem(2);
-            }
-        }
-
-        if (onGround == true)
-        {
-            if (Input.GetButton("Jump"))
-            {
-                rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
-                onGround = false;
-            }
-        }
+        
+        
+        /*
         if (rb.position.x != position)
         {
             leftFootanimator.SetBool("motion", true);
@@ -472,7 +482,13 @@ public class RandallMovement : MonoBehaviour
             rightFootanimator.SetBool("motion", false);
         }
         position = rb.position.x;
+        */
     }
+    public void activateSword()
+    {
+        FaerRight.SetActive(true);
+    }
+    
 
     public void hideSword()
     {
@@ -485,6 +501,7 @@ public class RandallMovement : MonoBehaviour
         if (collision.gameObject.tag == "Spirit" || collision.gameObject.tag == "Meanie")
         {
             changeHP(-1);
+            bodyanimator.SetTrigger("hurt");
             damageShader.SetVector("_Fade", new Vector3(20.0f, 0.0f, 0.0f));
             damaged = true;
             damageTimer = 0.0f;
@@ -563,9 +580,10 @@ public class RandallMovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" && onGround==false)
         {
             onGround = true;
+            bodyanimator.SetTrigger("land");
         }
     }
 

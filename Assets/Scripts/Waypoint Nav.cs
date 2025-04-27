@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WaypointNav : MonoBehaviour
 {
+    Rigidbody2D rigidbody;
     public List<Transform> waypoints;
     public Vector3 goTo;
     public float speed;
@@ -23,12 +24,15 @@ public class WaypointNav : MonoBehaviour
     public float projectileLength;
     public float hp;
     public RandallMovement Randall;
+    private bool left;
     // Start is called before the first frame update
     void Start()
     {
         transform.position = waypoints[waypointSpot].position;
         goToNext();
         cooldownreset = firecooldown;
+        left= true;
+        rigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -73,6 +77,22 @@ public class WaypointNav : MonoBehaviour
                 cooldownreset = 0;
             }
         }
+        if(left==true)
+        {
+            if(Randall.transform.position.x >gameObject.transform.position.x)
+            {
+                gameObject.transform.rotation= Quaternion.Euler(0f, 180f, 0f);
+                left=false;
+            }
+        }
+        else
+        {
+            if(Randall.transform.position.x <gameObject.transform.position.x)
+            {
+                gameObject.transform.rotation= Quaternion.Euler(0f, 0f, 0f);
+                left=true;
+            }
+        }
     }
 
     public void hpChecker()
@@ -99,6 +119,7 @@ public class WaypointNav : MonoBehaviour
         if (other.gameObject.CompareTag("Sword"))
         {
             hp -= Randall.STR;
+            Debug.Log("hit!");
         }
         else if (other.gameObject.CompareTag("Asha"))
         {
@@ -110,5 +131,22 @@ public class WaypointNav : MonoBehaviour
         }
 
         hpChecker();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Sword"))
+        {
+            hp -= Randall.STR;
+            Debug.Log("hit!");
+            hpChecker();
+            if(left==true)
+            {
+                gameObject.transform.position = new Vector3 (gameObject.transform.position.x + 2, gameObject.transform.position.y, gameObject.transform.position.z);
+            }
+            else{
+                gameObject.transform.position = new Vector3 (gameObject.transform.position.x + 2, gameObject.transform.position.y, gameObject.transform.position.z);
+            }
+        }
     }
 }

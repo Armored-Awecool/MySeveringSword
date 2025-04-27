@@ -126,6 +126,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7300231788342249550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5146531100656102444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3851272967477848499}
+  - component: {fileID: 4713203391659628430}
+  m_Layer: 0
+  m_Name: swordHitbox
+  m_TagString: Sword
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3851272967477848499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146531100656102444}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.000000029802322, w: 1}
+  m_LocalPosition: {x: 1.1200001, y: 0.029999912, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5399633608971599706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &4713203391659628430
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146531100656102444}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3, y: 7}
+  m_EdgeRadius: 0
 --- !u!1 &5694542291489349920
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,11 +293,11 @@ Transform:
   m_GameObject: {fileID: 6018665695980936807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.43, y: 5.97, z: 0}
+  m_LocalPosition: {x: 4.629136, y: 3.8024359, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7300231788342249550}
+  m_Father: {fileID: 3125342188434312155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7540261331132855400
 GameObject:
@@ -552,7 +629,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
     - target: {fileID: 9089702394452421987, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.73338544
+      value: 0.73764884
       objectReference: {fileID: 0}
     - target: {fileID: 9089702394452421987, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_LocalRotation.x
@@ -564,27 +641,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9089702394452421987, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6798131
+      value: -0.6751846
       objectReference: {fileID: 0}
     - target: {fileID: 9089702394452421987, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -85.658
+      value: -84.937
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7497176531792669939}
     - targetCorrespondingSourceObject: {fileID: -6394331357592546152, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5591658107402907706}
     - targetCorrespondingSourceObject: {fileID: -675542096198922913, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4647875504367285268}
+    - targetCorrespondingSourceObject: {fileID: -675542096198922913, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3851272967477848499}
     - targetCorrespondingSourceObject: {fileID: 6430865391506504267, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 883058690612545193}
-    - targetCorrespondingSourceObject: {fileID: 6430865391506504267, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7497176531792669939}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       insertIndex: -1
@@ -679,6 +759,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &3125342188434312155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
+  m_PrefabInstance: {fileID: 4355161306697740805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3229271682937531880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1197967801177251821, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
@@ -788,9 +873,8 @@ MonoBehaviour:
   rightFoot: {fileID: 0}
   eyeState: 0
   menuShown: 0
-  leftFootanimator: {fileID: 409360387055281152}
-  rightFootanimator: {fileID: 5147540680550001616}
   bodyanimator: {fileID: 9115213722074324964}
+  animator: {fileID: 2203965775782912487}
   position: 0
   VITtext: {fileID: 0}
   MNAtext: {fileID: 0}
@@ -837,8 +921,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   equipToolTip: {fileID: 0}
-  FaerLeft: {fileID: 0}
-  FaerRight: {fileID: 0}
+  FaerLeft: {fileID: 5146531100656102444}
+  FaerRight: {fileID: 5146531100656102444}
   CheckPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -858,6 +942,29 @@ MonoBehaviour:
   grassStep: {fileID: 0}
   BekaStoreMenu: {fileID: 0}
   damageShader: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  walking: 0
+  jumping: 0
+  attacking: 0
+  hurt: 0
+  casting: 0
+  landing: 0
   direction: right
 --- !u!50 &1502537700753947382
 Rigidbody2D:
