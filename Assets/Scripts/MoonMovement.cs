@@ -29,4 +29,9 @@ public class MoonMovement : MonoBehaviour
         }
         position = rb.position.x;
     }
+
+    public void exitGame()
+    {
+        Application.Quit();
+    }
 }

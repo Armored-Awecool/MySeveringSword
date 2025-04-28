@@ -3,7 +3,7 @@ A moves left
 D moves right
 Spacebar jumps
 E uses the sword
-1, 2, and 3 keys use the respective item slots
+1, 2, 3, 4, 5, and 6 keys use the respective item slots
 Q opens doors
 
 To equip an item to a slot, click the slot's button then click on the item you want to put in that slot. (refer to video)
@@ -12,6 +12,8 @@ To equip an item to a slot, click the slot's button then click on the item you w
 Fae'r - Randall's sword
 Litha - Light magic
 Asha - Dark magic
+Sesta - Fire magic
+Crista - Ice magic
 
 ~CURRENT ITEMS~
 Lesser Potion - Heals 4 VIT
@@ -27,4 +29,6 @@ Game Over Theme - "Tears Cannot Mend Scars" - Nyrythm
 
 ~CREDITS~
 Music and Sound Effects by Nyrythm
+Sound Effects by Jacob Harrell
 Art by Hunter Osborne and Alice Johnson
+Code by Hunter Osborne and Alice Johnson

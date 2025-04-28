@@ -146,9 +146,17 @@ public class RandallMovement : MonoBehaviour
             {
                 currentCheckpoint -= 2;
             }
-            else if (currentCheckpoint == 4)
+            else if (currentCheckpoint == 4 || currentCheckpoint == 5)
             {
                 currentCheckpoint -= 4;
+            }
+            else if (currentCheckpoint == 6)
+            {
+                currentCheckpoint -= 6;
+            }
+            else if (currentCheckpoint == 7)
+            {
+                currentCheckpoint -= 7;
             }
             rb.transform.position = CheckPoints[currentCheckpoint].position;
             saveFile.Close();
@@ -607,38 +615,41 @@ public class RandallMovement : MonoBehaviour
         {
             saveGame(2);
             SceneManager.LoadScene("Village");
-            SceneManager.UnloadSceneAsync("SeveringSword");
         }
         else if (collision.gameObject.tag == "Zone1Trigger")
         {
             saveGame(1);
             SceneManager.LoadScene("SeveringSword");
-            SceneManager.UnloadSceneAsync("Village");
         }
         else if (collision.gameObject.tag == "LoadVillageRight")
         {
             saveGame(3);
             SceneManager.LoadScene("Village");
-            SceneManager.UnloadSceneAsync("Zone2");
         }
         else if (collision.gameObject.tag == "Zone2TriggerLeft")
         {
             saveGame(4);
             SceneManager.LoadScene("Zone2");
-            SceneManager.UnloadSceneAsync("Village");
         }
-         else if (collision.gameObject.tag == "Zone3Trigger")
+        else if (collision.gameObject.tag == "Zone3Trigger")
         {
-            
+            saveGame(6);
             SceneManager.LoadScene("zone3");
-            SceneManager.UnloadSceneAsync("Zone2");
         }
-        /*else if (collision.gameObject.tag == "main menu trigger")
+        else if (collision.gameObject.tag == "Zone2TriggerRight")
+        {
+            saveGame(5);
+            SceneManager.LoadScene("Zone2");
+        }
+        else if (collision.gameObject.tag == "VoidOut")
+        {
+            gameOver();
+        }
+        else if (collision.gameObject.tag == "main menu trigger")
         {
             
             SceneManager.LoadScene("MainMenu");
-            SceneManager.UnloadSceneAsync("zone3");
-        }*/
+        }
     }
 
     public void hpChecker()

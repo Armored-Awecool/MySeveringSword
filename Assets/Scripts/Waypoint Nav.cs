@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaypointNav : MonoBehaviour
 {
@@ -106,6 +107,11 @@ public class WaypointNav : MonoBehaviour
         if (hp <= 0)
         {
             Randall.xp += 3;
+            WaypointNav[] EnemiesAlive = FindObjectsOfType<WaypointNav>();
+            if (EnemiesAlive.Length == 1)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
             Destroy(gameObject);
         }
     }

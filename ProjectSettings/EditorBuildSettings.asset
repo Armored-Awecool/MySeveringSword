@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 1a71d604c33dd0c44a60bac0a1cbb4c0
+  - enabled: 1
+    path: Assets/Scenes/Challenge Room.unity
+    guid: 0a9f9757166eeec47956a614ef623433
   m_configObjects: {}
