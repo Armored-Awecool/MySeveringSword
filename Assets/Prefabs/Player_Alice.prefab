@@ -201,7 +201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 7}
+  m_Size: {x: 3, y: 5}
   m_EdgeRadius: 0
 --- !u!1 &5694542291489349920
 GameObject:
@@ -421,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8655357406805973994, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -142.548
+      value: -44.64
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_Name
@@ -561,7 +561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -675542096198922913, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 70.706
+      value: 7.892
       objectReference: {fileID: 0}
     - target: {fileID: 2189336475974270400, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -690,6 +690,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3663586793752451816, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9115213722074324964}
+    - targetCorrespondingSourceObject: {fileID: 3663586793752451816, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1717950934637002719}
     - targetCorrespondingSourceObject: {fileID: 1197967801177251821, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 409360387055281152}
@@ -723,6 +726,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1717950934637002719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055822417354811629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe7ff42fa7393ae4ab3a3ad0e50feace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sword: {fileID: 5146531100656102444}
+  player: {fileID: 0}
 --- !u!4 &1959736127811266205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6394331357592546152, guid: a0209450e49e71f4fa68f713836ef430, type: 3}
@@ -931,8 +948,10 @@ MonoBehaviour:
   currentMNA: 0
   CurrentMNA: {fileID: 0}
   equipSlotWait: 0
-  asha: {fileID: 8417146029042640755, guid: eeab664d3b2ba0a48b6dab6375a52661, type: 3}
+  asha: {fileID: 787584203754813700, guid: 9d6b7ed9d16afde4e94b3b38588d317a, type: 3}
   litha: {fileID: 4620539744238006525, guid: e6d50469d289207439c71b1436bafc93, type: 3}
+  sesta: {fileID: 1865570060915655426, guid: ed8ced00b3d2aac44bfcf03563055469, type: 3}
+  crista: {fileID: 81046026417132101, guid: aca66d0d796cf67459b31321a15f891c, type: 3}
   bulletSpawn: {fileID: 7497176531792669939}
   firecooldown: 0
   cooldownreset: 0

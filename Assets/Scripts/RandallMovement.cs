@@ -60,6 +60,8 @@ public class RandallMovement : MonoBehaviour
     public int equipSlotWait;
     public GameObject asha;
     public GameObject litha;
+    public GameObject sesta;
+    public GameObject crista;
     public Transform bulletSpawn;
     public float firecooldown;
     public float cooldownreset;
@@ -73,6 +75,7 @@ public class RandallMovement : MonoBehaviour
     private float damageTime = 0.3f;
     private float damageTimer;
     public GameObject[] hearts;
+
 
     //animation values
     public bool walking;
@@ -89,7 +92,7 @@ public class RandallMovement : MonoBehaviour
         menuShown = false;
         eyeState = 0;
         speed = 5.0f;
-        jumpSpeed = 10.0f;
+        jumpSpeed = 12.0f;
         position = rb.position.x;
         TheInventory = GetComponent<TheInventory>();
         LoadSaveGame();
@@ -155,7 +158,7 @@ public class RandallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
             bodyanimator.SetTrigger("attack");
@@ -326,6 +329,8 @@ public class RandallMovement : MonoBehaviour
         //CurrentHP.text = "VIT: " + currentVIT + "/" + VIT;
     }
 
+    
+    
     public void changeMNA(int change)
     {
         currentMNA += change;
@@ -452,16 +457,32 @@ public class RandallMovement : MonoBehaviour
                 rb.AddForce(bulletSpawn.right * AGI, ForceMode2D.Impulse);
                 Destroy(lithaTemp, 5);
                 cooldownreset = 0;
-                changeMNA(-3);
+                changeMNA(-1);
             }
         }
         else if (getItemSlot(slot) == "Sesta") // RIGHT HERE ALICE IS WHERE YOU CAN ADD FIRE AND ICE SPELLS
         {
-            Debug.Log("Sesta works");
+            if (cooldownreset >= firecooldown && currentMNA >= 3)
+            {
+                GameObject sestaTemp = Instantiate(sesta, bulletSpawn.position, bulletSpawn.rotation);
+                Rigidbody2D rb = sestaTemp.GetComponent<Rigidbody2D>();
+                rb.AddForce(bulletSpawn.right * AGI, ForceMode2D.Impulse);
+                Destroy(sestaTemp, 5);
+                cooldownreset = 0;
+                changeMNA(-5);
+            }
         }
         else if (getItemSlot(slot) == "Crista")
         {
-            Debug.Log("Crista works");
+            if (cooldownreset >= firecooldown && currentMNA >= 3)
+            {
+                GameObject cristaTemp = Instantiate(crista, bulletSpawn.position, bulletSpawn.rotation);
+                Rigidbody2D rb = cristaTemp.GetComponent<Rigidbody2D>();
+                rb.AddForce(bulletSpawn.right * AGI, ForceMode2D.Impulse);
+                Destroy(cristaTemp, 5);
+                cooldownreset = 0;
+                changeMNA(-7);
+            }
         }
 
         item[] quickitems = TheInventory.getQuickItems();

@@ -1675,6 +1675,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374466153}
   m_CullTransparentMesh: 1
+--- !u!1 &403993635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5146531100656102444, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+  m_PrefabInstance: {fileID: 5114832163012085600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &404578686
 GameObject:
   m_ObjectHideFlags: 0
@@ -16832,7 +16837,7 @@ PrefabInstance:
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: FaerLeft
       value: 
-      objectReference: {fileID: 3264457572195377254}
+      objectReference: {fileID: 403993635}
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: CurrentHP
       value: 
@@ -16840,7 +16845,7 @@ PrefabInstance:
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: FaerRight
       value: 
-      objectReference: {fileID: 7189708839941902740}
+      objectReference: {fileID: 403993635}
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: grassStep
       value: 
@@ -22204,7 +22209,7 @@ PrefabInstance:
     - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
       propertyPath: Randall
       value: 
-      objectReference: {fileID: 6039774502223988471}
+      objectReference: {fileID: 51015092}
     - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
       propertyPath: chaseDis
       value: 1

@@ -16,6 +16,10 @@ TagManager:
   - BekaStoreDoor
   - LoadVillageRight
   - Zone2TriggerLeft
+  - Zone3Trigger
+  - main menu trigger
+  - Sesta
+  - Crista
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,7 @@ public class WaypointNav : MonoBehaviour
     public List<Transform> waypoints;
     public Vector3 goTo;
     public float speed;
+    public float tempSpeed;
     public int waypointSpot = 0;
     public Vector3 playerDistance;
     public Transform player;
@@ -25,6 +26,10 @@ public class WaypointNav : MonoBehaviour
     public float hp;
     public RandallMovement Randall;
     private bool left;
+
+    private float burnTickTimer = 0.5f;
+    private float burnTickTime = 0.5f;
+    private bool frozen;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,12 +38,13 @@ public class WaypointNav : MonoBehaviour
         cooldownreset = firecooldown;
         left= true;
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        tempSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, goTo, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, goTo, tempSpeed * Time.deltaTime);
         if (transform.position == goTo)
         {
             goToNext();
@@ -127,10 +133,45 @@ public class WaypointNav : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Litha"))
         {
-            hp -= Randall.INT;
+            hp -= Randall.INT-7;
+        }
+        else if (other.gameObject.CompareTag("Sesta"))
+        {
+            hp -= Randall.INT-2;
+            gameObject.SendMessage("setBurn");
+        }
+        else if (other.gameObject.CompareTag("Crista"))
+        {
+            hp -= Randall.INT-4;
+            gameObject.SendMessage("setFreeze");
         }
 
+
         hpChecker();
+    }
+
+    void burnDamage()
+    {
+        if(burnTickTimer>burnTickTime)
+        {
+            hp-=1;
+            burnTickTimer = 0f;
+            return;
+        }
+        burnTickTimer+=Time.deltaTime;
+
+        hpChecker();
+    }
+
+    void freeze()
+        {
+            tempSpeed = 0.0f;
+            Debug.Log("frozen");
+        }
+    
+    void unfreeze()
+    {
+        tempSpeed = speed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -14473,6 +14473,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1086383594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5146531100656102444, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+  m_PrefabInstance: {fileID: 1441254343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1091344549
 GameObject:
   m_ObjectHideFlags: 0
@@ -20142,7 +20147,7 @@ PrefabInstance:
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: FaerLeft
       value: 
-      objectReference: {fileID: 966506196}
+      objectReference: {fileID: 1086383594}
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: CurrentHP
       value: 
@@ -20150,7 +20155,7 @@ PrefabInstance:
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: FaerRight
       value: 
-      objectReference: {fileID: 722795645}
+      objectReference: {fileID: 1086383594}
     - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: grassStep
       value: 

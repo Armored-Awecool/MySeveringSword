@@ -2701,6 +2701,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180538610}
   m_CullTransparentMesh: 1
+--- !u!1 &186534510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5146531100656102444, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+  m_PrefabInstance: {fileID: 1820605453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &195906637
 GameObject:
   m_ObjectHideFlags: 0
@@ -9830,6 +9835,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1369222639}
+    - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
+      propertyPath: Randall
+      value: 
+      objectReference: {fileID: 1369222632}
     - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
       propertyPath: waypoints.Array.size
       value: 3
@@ -17597,7 +17606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Randall: {fileID: 1369222631}
   speed: 5
-  jumpSpeed: 10
+  jumpSpeed: 11
   onGround: 1
   rb: {fileID: 1369222636}
   inventory: {fileID: 369600063}
@@ -17609,8 +17618,8 @@ MonoBehaviour:
   rightFoot: {fileID: 0}
   eyeState: 0
   menuShown: 0
-  bodyanimator: {fileID: 0}
-  animator: {fileID: 0}
+  bodyanimator: {fileID: 1461661863}
+  animator: {fileID: 1369222642}
   position: 0
   VITtext: {fileID: 1536668883}
   MNAtext: {fileID: 167394807}
@@ -17657,8 +17666,8 @@ MonoBehaviour:
   - {fileID: 453854028}
   - {fileID: 1561644045}
   equipToolTip: {fileID: 980461878}
-  FaerLeft: {fileID: 146438289}
-  FaerRight: {fileID: 351575694}
+  FaerLeft: {fileID: 186534510}
+  FaerRight: {fileID: 186534510}
   CheckPoints:
   - {fileID: 365493942}
   - {fileID: 345481653}
@@ -17669,6 +17678,8 @@ MonoBehaviour:
   equipSlotWait: 0
   asha: {fileID: 8417146029042640755, guid: eeab664d3b2ba0a48b6dab6375a52661, type: 3}
   litha: {fileID: 4620539744238006525, guid: e6d50469d289207439c71b1436bafc93, type: 3}
+  sesta: {fileID: 1865570060915655426, guid: ed8ced00b3d2aac44bfcf03563055469, type: 3}
+  crista: {fileID: 81046026417132101, guid: aca66d0d796cf67459b31321a15f891c, type: 3}
   bulletSpawn: {fileID: 332404272}
   firecooldown: 0
   cooldownreset: 0
@@ -17721,6 +17732,11 @@ Rigidbody2D:
 --- !u!4 &1369222639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3125342188434312155, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+  m_PrefabInstance: {fileID: 1820605453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1369222642 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2203965775782912487, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
   m_PrefabInstance: {fileID: 1820605453}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1377268653
@@ -18369,6 +18385,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430369496}
   m_CullTransparentMesh: 1
+--- !u!95 &1461661863 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9115213722074324964, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+  m_PrefabInstance: {fileID: 1820605453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1463724503
 GameObject:
   m_ObjectHideFlags: 0
@@ -24703,6 +24724,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1530849928}
+    - target: {fileID: 4407022294964025308, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.999935
+      objectReference: {fileID: 0}
     - target: {fileID: 4407022294964025308, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.01141073
