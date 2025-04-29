@@ -1,4 +1,6 @@
-~CONTROLS~
+# My Severing Sword - Read Me
+
+## CONTROLS
 A moves left
 D moves right
 Spacebar jumps
@@ -8,26 +10,26 @@ Q opens doors
 
 To equip an item to a slot, click the slot's button then click on the item you want to put in that slot. (refer to video)
 
-~CURRENT WEAPONS~
+## CURRENT WEAPONS
 Fae'r - Randall's sword
 Litha - Light magic
 Asha - Dark magic
 Sesta - Fire magic
 Crista - Ice magic
 
-~CURRENT ITEMS~
+## CURRENT ITEMS
 Lesser Potion - Heals 4 VIT
 Potion - Heals 8 VIT
 Greater Potion - Heals 16 VIT
 
-~SOUNDTRACK~
+## SOUNDTRACK
 Title Screen - "Here We Meet, There We Part" - Nyrythm
 Starting Area - "Cursed To Reside" - Nyrythm
 House Area and Second Area - "Somber Hope" - Nyrythm
 Shop Theme - "Beka's Theme" - Nyrythm
 Game Over Theme - "Tears Cannot Mend Scars" - Nyrythm
 
-~CREDITS~
+## CREDITS
 Music and Sound Effects by Nyrythm
 Sound Effects by Jacob Harrell
 Art by Hunter Osborne and Alice Johnson
