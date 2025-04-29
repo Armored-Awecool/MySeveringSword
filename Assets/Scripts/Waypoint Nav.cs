@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WaypointNav : MonoBehaviour
 {
-    Rigidbody2D rigidbody;
+    Rigidbody2D rb;
     public List<Transform> waypoints;
     public Vector3 goTo;
     public float speed;
@@ -38,7 +38,7 @@ public class WaypointNav : MonoBehaviour
         goToNext();
         cooldownreset = firecooldown;
         left= true;
-        rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
         tempSpeed = speed;
     }
 
@@ -77,8 +77,8 @@ public class WaypointNav : MonoBehaviour
             if (cooldownreset >= firecooldown)
             {
                 GameObject fireTemp = Instantiate(shot, bulletSpawn.position, bulletSpawn.rotation);
-                Rigidbody2D rb = fireTemp.GetComponent<Rigidbody2D>();
-                rb.AddForce(-bulletSpawn.right * 5, ForceMode2D.Impulse);
+                Rigidbody2D tempRB = fireTemp.GetComponent<Rigidbody2D>();
+                tempRB.AddForce(-bulletSpawn.right * 5, ForceMode2D.Impulse);
                 //fireTemp.transform.position = Vector2.MoveTowards(transform.position, player.position, .5f * Time.deltaTime);
                 Destroy(fireTemp, projectileLength);
                 cooldownreset = 0;
@@ -108,7 +108,8 @@ public class WaypointNav : MonoBehaviour
         {
             Randall.xp += 3;
             WaypointNav[] EnemiesAlive = FindObjectsOfType<WaypointNav>();
-            if (EnemiesAlive.Length == 1)
+            Scene currentScene = SceneManager.GetActiveScene();
+            if (EnemiesAlive.Length == 1 && currentScene.name == "Challenge Room")
             {
                 SceneManager.LoadScene("MainMenu");
             }
