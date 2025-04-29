@@ -22,6 +22,7 @@ TagManager:
   - Crista
   - Zone2TriggerRight
   - VoidOut
+  - level 2 trigger
   layers:
   - Default
   - TransparentFX

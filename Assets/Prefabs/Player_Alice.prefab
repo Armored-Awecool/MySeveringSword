@@ -876,6 +876,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2915269524d264bad402a31fc29231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffects:
+  - {fileID: 8300000, guid: fc161a2b71af44c47b129d94a4e98d3d, type: 3}
+  - {fileID: 8300000, guid: fd7bd311939c17542a45f986a0cef377, type: 3}
+  - {fileID: 8300000, guid: 909f1ae471df1da4a8936f1488bfd633, type: 3}
+  - {fileID: 8300000, guid: 70007a3fe2c65c54c8694a5fbc0dc8a7, type: 3}
+  - {fileID: 8300000, guid: e2ab83ca85b1da64aafda588dfeaed9d, type: 3}
   Randall: {fileID: 4294019506434479032}
   speed: 5
   jumpSpeed: 10

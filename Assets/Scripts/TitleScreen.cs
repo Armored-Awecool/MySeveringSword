@@ -105,6 +105,36 @@ public class TitleScreen : MonoBehaviour
         loadSaveGame();
     }
 
+    public void loadLevel2()
+    {
+        /*
+        SAVE FILE ORGANIZATION:
+        FIRST LINE IS THE STATS: LVL/VIT/MNA/EGY/STR/AGI/INT/DEF/LUK/xp
+        SECOND LINE IS THE CURRENT CHECKPOINT
+        THIRD LINE IS THE NAME OF CURRENT WEAPON AND QUICK SLOTS HERE! WEAPON/SLOT1/SLOT2/SLOT3
+        THE NEXT LINES BELOW ARE INVENTORY SLOTS, SAVED AS: itemtype/name/description/damage/defense/hp/type/element/inscriptionamount
+        IF INSCRIPTION AMOUNT IS MORE THAN 0, THE LINES BELOW WILL SAVE INSCRIPTIONS WITH FORMAT OF name/description/damage/defense/hp/specialEffect/element
+        */
+
+        string filePath = Path.Combine(Application.persistentDataPath, "MSSsave.txt");
+
+        using (StreamWriter saveFile = new StreamWriter(filePath))
+        {
+            saveFile.WriteLine("1:12:12:5:7:7:7:7:5:0");
+            saveFile.WriteLine("8");
+            saveFile.WriteLine("Fae'r:Asha:Litha:Sesta:Crista:Empty:Empty");
+            saveFile.WriteLine("sword:Fae'r:A sword forged by Randall himself. It's spirit has been awakened by him as well.:3:3:4:Beautiful:Light:2");
+            saveFile.WriteLine("Empty");
+            saveFile.WriteLine("Empty");
+            saveFile.WriteLine("spell:Asha:The Lowest Dark Magic:0:0:0:None:Dark:0");
+            saveFile.WriteLine("spell:Litha:The Lowest Light Magic:0:0:0:None:Light:0");
+            saveFile.WriteLine("spell:Sesta:The Lowest Fire Magic:0:0:0:None:Fire:0");
+            saveFile.WriteLine("spell:Crista:The Lowest Crista Magic:0:0:0:None:Ice:0");
+            saveFile.Close();
+        }
+        loadSaveGame();
+    }
+
     public void loadSaveGame()
     {
         titleMusic.Stop();
@@ -132,6 +162,10 @@ public class TitleScreen : MonoBehaviour
         else if (checkpoint == 7)
         {
             SceneManager.LoadScene("Challenge Room");
+        }
+        else if (checkpoint == 8)
+        {
+            SceneManager.LoadScene("Level2");
         }
         else
         {

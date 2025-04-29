@@ -17377,6 +17377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2915269524d264bad402a31fc29231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffects: []
   Randall: {fileID: 3498075437027148723}
   speed: 5
   jumpSpeed: 10

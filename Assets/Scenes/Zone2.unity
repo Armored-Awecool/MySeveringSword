@@ -2701,11 +2701,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180538610}
   m_CullTransparentMesh: 1
---- !u!1 &186534510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5146531100656102444, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
-  m_PrefabInstance: {fileID: 1820605453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &195906637
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,7 +3652,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equip
         m_Mode: 3
@@ -4272,11 +4267,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 146227570}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &332404272 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7497176531792669939, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
-  m_PrefabInstance: {fileID: 1820605453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &342521914
 GameObject:
   m_ObjectHideFlags: 0
@@ -5338,7 +5328,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -7538,7 +7528,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -8807,7 +8797,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -9966,7 +9956,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equip
         m_Mode: 3
@@ -10035,7 +10025,7 @@ PrefabInstance:
     - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
       propertyPath: Randall
       value: 
-      objectReference: {fileID: 1369222632}
+      objectReference: {fileID: 1369222643}
     - target: {fileID: 3518731821080756678, guid: 3fe9d816e7fb67a419cc76e61b0ffc2c, type: 3}
       propertyPath: waypoints.Array.size
       value: 3
@@ -12015,7 +12005,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -13497,7 +13487,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -13922,7 +13912,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -14813,7 +14803,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equip
         m_Mode: 3
@@ -15076,7 +15066,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equip
         m_Mode: 3
@@ -15961,7 +15951,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -16312,7 +16302,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -17733,7 +17723,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -17917,143 +17907,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359230636}
   m_CullTransparentMesh: 1
---- !u!1 &1369222631 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4294019506434479032, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
-  m_PrefabInstance: {fileID: 1820605453}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1369222632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369222631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2915269524d264bad402a31fc29231, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Randall: {fileID: 1369222631}
-  speed: 5
-  jumpSpeed: 11
-  onGround: 1
-  rb: {fileID: 1369222636}
-  inventory: {fileID: 369600063}
-  noEye: {fileID: 1827129490}
-  pinkEye: {fileID: 1885220000}
-  purpleEye: {fileID: 1215025603}
-  bothEye: {fileID: 1148605819}
-  leftFoot: {fileID: 0}
-  rightFoot: {fileID: 0}
-  eyeState: 0
-  menuShown: 0
-  bodyanimator: {fileID: 1461661863}
-  animator: {fileID: 1369222642}
-  position: 0
-  VITtext: {fileID: 1536668883}
-  MNAtext: {fileID: 167394807}
-  EGYtext: {fileID: 1430369498}
-  STRtext: {fileID: 456742840}
-  AGItext: {fileID: 1611028270}
-  INTtext: {fileID: 1602252003}
-  DEFtext: {fileID: 1329606369}
-  LUKtext: {fileID: 1300678724}
-  CurrentHP: {fileID: 604385724}
-  leveltext: {fileID: 180538612}
-  CHP: {fileID: 604385722}
-  currentVIT: 0
-  level: 0
-  VIT: 0
-  MNA: 0
-  EGY: 0
-  STR: 0
-  AGI: 0
-  INT: 0
-  DEF: 0
-  LUK: 0
-  TheInventory: {fileID: 1369222634}
-  items:
-  - {fileID: 1108872088}
-  - {fileID: 615202183}
-  - {fileID: 1377268655}
-  - {fileID: 2143654519}
-  - {fileID: 1792324572}
-  - {fileID: 1357556780}
-  - {fileID: 1935956814}
-  - {fileID: 1780680126}
-  - {fileID: 1536999990}
-  - {fileID: 1848945245}
-  spells:
-  - {fileID: 1586977078}
-  - {fileID: 1303157456}
-  - {fileID: 1315256291}
-  - {fileID: 2002692478}
-  - {fileID: 2063184204}
-  - {fileID: 1001583973}
-  - {fileID: 1072444376}
-  - {fileID: 713808917}
-  - {fileID: 453854028}
-  - {fileID: 1561644045}
-  equipToolTip: {fileID: 980461878}
-  FaerLeft: {fileID: 186534510}
-  FaerRight: {fileID: 186534510}
-  CheckPoints:
-  - {fileID: 365493942}
-  - {fileID: 345481653}
-  xp: 0
-  VIThidden: 0
-  currentMNA: 0
-  CurrentMNA: {fileID: 587154112}
-  equipSlotWait: 0
-  asha: {fileID: 8417146029042640755, guid: eeab664d3b2ba0a48b6dab6375a52661, type: 3}
-  litha: {fileID: 4620539744238006525, guid: e6d50469d289207439c71b1436bafc93, type: 3}
-  sesta: {fileID: 1865570060915655426, guid: ed8ced00b3d2aac44bfcf03563055469, type: 3}
-  crista: {fileID: 81046026417132101, guid: aca66d0d796cf67459b31321a15f891c, type: 3}
-  bulletSpawn: {fileID: 332404272}
-  firecooldown: 0
-  cooldownreset: 0
-  manarecover: 0
-  AudioManager: {fileID: 1553629337}
-  gameOverScreen: {fileID: 688420160}
-  grassStep: {fileID: 2090823014}
-  BekaStoreMenu: {fileID: 562666213}
-  damageShader: {fileID: 2100000, guid: b51495ea072f73e4e80deba40d81fa47, type: 2}
-  hearts:
-  - {fileID: 1132660038}
-  - {fileID: 1315552075}
-  - {fileID: 883624482}
-  - {fileID: 1853685827}
-  - {fileID: 2001425169}
-  - {fileID: 1491775916}
-  - {fileID: 1665269150}
-  - {fileID: 596582516}
-  - {fileID: 795836403}
-  - {fileID: 1973113526}
-  - {fileID: 749165942}
-  - {fileID: 1697949517}
-  - {fileID: 863972829}
-  - {fileID: 622851630}
-  - {fileID: 1015457525}
-  - {fileID: 1517446426}
-  walking: 0
-  jumping: 0
-  attacking: 0
-  hurt: 0
-  casting: 0
-  landing: 0
-  direction: right
---- !u!114 &1369222634 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8451976272290259574, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
-  m_PrefabInstance: {fileID: 1820605453}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369222631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c634e94e14f891041b764af5de0ac706, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1369222636 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1502537700753947382, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
@@ -18064,11 +17917,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3125342188434312155, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
   m_PrefabInstance: {fileID: 1820605453}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1369222642 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2203965775782912487, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+--- !u!114 &1369222643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
   m_PrefabInstance: {fileID: 1820605453}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2915269524d264bad402a31fc29231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1377268653
 GameObject:
   m_ObjectHideFlags: 0
@@ -18152,7 +18011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -18715,11 +18574,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430369496}
   m_CullTransparentMesh: 1
---- !u!95 &1461661863 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9115213722074324964, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
-  m_PrefabInstance: {fileID: 1820605453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1463724503
 GameObject:
   m_ObjectHideFlags: 0
@@ -19872,7 +19726,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -20446,7 +20300,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -20913,7 +20767,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -21859,7 +21713,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equip
         m_Mode: 3
@@ -22618,7 +22472,7 @@ PrefabInstance:
     - target: {fileID: 3892483728068364829, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
       propertyPath: Randall
       value: 
-      objectReference: {fileID: 1369222632}
+      objectReference: {fileID: 1369222643}
     - target: {fileID: 3892483728068364829, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
       propertyPath: inShoot
       value: 1
@@ -23203,7 +23057,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -23336,7 +23190,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -23621,7 +23475,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equip
         m_Mode: 3
@@ -23870,7 +23724,259 @@ PrefabInstance:
     - target: {fileID: 5733962797468046649, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: RandallMovement
       value: 
-      objectReference: {fileID: 1369222632}
+      objectReference: {fileID: 1369222643}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: CHP
+      value: 
+      objectReference: {fileID: 604385722}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: VIT
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: asha
+      value: 
+      objectReference: {fileID: 8417146029042640755, guid: eeab664d3b2ba0a48b6dab6375a52661, type: 3}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: noEye
+      value: 
+      objectReference: {fileID: 1827129490}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: AGItext
+      value: 
+      objectReference: {fileID: 1611028270}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: DEFtext
+      value: 
+      objectReference: {fileID: 1329606369}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: EGYtext
+      value: 
+      objectReference: {fileID: 1430369498}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: INTtext
+      value: 
+      objectReference: {fileID: 1602252003}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: LUKtext
+      value: 
+      objectReference: {fileID: 1300678724}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: MNAtext
+      value: 
+      objectReference: {fileID: 167394807}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: STRtext
+      value: 
+      objectReference: {fileID: 456742840}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: VITtext
+      value: 
+      objectReference: {fileID: 1536668883}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: bothEye
+      value: 
+      objectReference: {fileID: 1148605819}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: pinkEye
+      value: 
+      objectReference: {fileID: 1885220000}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: CurrentHP
+      value: 
+      objectReference: {fileID: 604385724}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: grassStep
+      value: 
+      objectReference: {fileID: 2090823014}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 369600063}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: jumpSpeed
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: leveltext
+      value: 
+      objectReference: {fileID: 180538612}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: purpleEye
+      value: 
+      objectReference: {fileID: 1215025603}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: CurrentMNA
+      value: 
+      objectReference: {fileID: 587154112}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: AudioManager
+      value: 
+      objectReference: {fileID: 1553629337}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: equipToolTip
+      value: 
+      objectReference: {fileID: 980461878}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: BekaStoreMenu
+      value: 
+      objectReference: {fileID: 562666213}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 688420160}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 1108872088}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[1]
+      value: 
+      objectReference: {fileID: 615202183}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 1377268655}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[3]
+      value: 
+      objectReference: {fileID: 2143654519}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[4]
+      value: 
+      objectReference: {fileID: 1792324572}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[5]
+      value: 
+      objectReference: {fileID: 1357556780}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[6]
+      value: 
+      objectReference: {fileID: 1935956814}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[7]
+      value: 
+      objectReference: {fileID: 1780680126}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[8]
+      value: 
+      objectReference: {fileID: 1536999990}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: items.Array.data[9]
+      value: 
+      objectReference: {fileID: 1848945245}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1132660038}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 1315552075}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 883624482}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[3]
+      value: 
+      objectReference: {fileID: 1853685827}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[4]
+      value: 
+      objectReference: {fileID: 2001425169}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[5]
+      value: 
+      objectReference: {fileID: 1491775916}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[6]
+      value: 
+      objectReference: {fileID: 1665269150}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[7]
+      value: 
+      objectReference: {fileID: 596582516}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[8]
+      value: 
+      objectReference: {fileID: 795836403}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[9]
+      value: 
+      objectReference: {fileID: 1973113526}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[0]
+      value: 
+      objectReference: {fileID: 1586977078}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[1]
+      value: 
+      objectReference: {fileID: 1303157456}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[2]
+      value: 
+      objectReference: {fileID: 1315256291}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[3]
+      value: 
+      objectReference: {fileID: 2002692478}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[4]
+      value: 
+      objectReference: {fileID: 2063184204}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[5]
+      value: 
+      objectReference: {fileID: 1001583973}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[6]
+      value: 
+      objectReference: {fileID: 1072444376}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[7]
+      value: 
+      objectReference: {fileID: 713808917}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[8]
+      value: 
+      objectReference: {fileID: 453854028}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: spells.Array.data[9]
+      value: 
+      objectReference: {fileID: 1561644045}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[10]
+      value: 
+      objectReference: {fileID: 749165942}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[11]
+      value: 
+      objectReference: {fileID: 1697949517}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[12]
+      value: 
+      objectReference: {fileID: 863972829}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[13]
+      value: 
+      objectReference: {fileID: 622851630}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[14]
+      value: 
+      objectReference: {fileID: 1015457525}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: hearts.Array.data[15]
+      value: 
+      objectReference: {fileID: 1517446426}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: CheckPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 365493942}
+    - target: {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+      propertyPath: CheckPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 345481653}
     - target: {fileID: 6902112275939876248, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -23886,19 +23992,15 @@ PrefabInstance:
     - target: {fileID: 8451976272290259574, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: Randall
       value: 
-      objectReference: {fileID: 1369222632}
+      objectReference: {fileID: 1369222643}
     - target: {fileID: 8451976272290259574, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
       propertyPath: FullInventory
       value: 
       objectReference: {fileID: 907897204}
-    m_RemovedComponents:
-    - {fileID: 6484702952045634029, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4294019506434479032, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1369222632}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54b58d63c083c644e862b548f87486d5, type: 3}
 --- !u!1 &1827129490
 GameObject:
@@ -24058,7 +24160,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -25361,7 +25463,7 @@ PrefabInstance:
     - target: {fileID: 3892483728068364829, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
       propertyPath: Randall
       value: 
-      objectReference: {fileID: 1369222632}
+      objectReference: {fileID: 1369222643}
     - target: {fileID: 3892483728068364829, guid: 56a80989f281c9944a0cc25b9d99404c, type: 3}
       propertyPath: inShoot
       value: 1
@@ -25723,7 +25825,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -26471,7 +26573,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -27049,7 +27151,7 @@ PrefabInstance:
     - target: {fileID: 571399016205252792, guid: 2e9c75a6183ee6846944f2d00acfae7d, type: 3}
       propertyPath: Randall
       value: 
-      objectReference: {fileID: 1369222632}
+      objectReference: {fileID: 1369222643}
     - target: {fileID: 571399016205252792, guid: 2e9c75a6183ee6846944f2d00acfae7d, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -27328,7 +27430,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2
@@ -28680,7 +28782,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1369222632}
+      - m_Target: {fileID: 1369222643}
         m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: equipThis
         m_Mode: 2

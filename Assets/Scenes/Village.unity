@@ -8316,9 +8316,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Press ESC to open your menu and equip items to \nthe number slots\n\nPress
-    the bumber button, then the item to equip it\n\nBe careful, your spells are also
-    equipped to slots! If you\nunequip one, then you'll have to equip it again to
-    use it!\n\n"
+    the number (slot) button, then the item to equip it\n\nBe careful, your spells
+    are also equipped to slots! If you\nunequip one, then you'll have to equip it
+    again to use it!\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a525d0da347856b449f94e7c1a8b5140, type: 2}
   m_sharedMaterial: {fileID: -4321078958821925870, guid: a525d0da347856b449f94e7c1a8b5140, type: 2}
@@ -10118,8 +10118,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1975654383}
-        m_TargetAssemblyTypeName: RandallMovement, Assembly-CSharp
+      - m_Target: {fileID: 1641493721}
+        m_TargetAssemblyTypeName: RandallMovement, textmeshAssembly
         m_MethodName: exitBekaStore
         m_Mode: 1
         m_Arguments:
@@ -26584,6 +26584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2915269524d264bad402a31fc29231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffects: []
   Randall: {fileID: 1975654380}
   speed: 5
   jumpSpeed: 10

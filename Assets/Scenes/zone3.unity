@@ -5316,7 +5316,7 @@ GameObject:
   - component: {fileID: 1047453653}
   m_Layer: 0
   m_Name: Goal
-  m_TagString: main menu trigger
+  m_TagString: level 2 trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20763,6 +20763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2915269524d264bad402a31fc29231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffects: []
   Randall: {fileID: 3498075437027148723}
   speed: 5
   jumpSpeed: 10

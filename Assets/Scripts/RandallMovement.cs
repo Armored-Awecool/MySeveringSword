@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class RandallMovement : MonoBehaviour
 {
+    public AudioClip[] soundEffects;
     public GameObject Randall;
     public float speed;
     public float jumpSpeed;
@@ -75,7 +76,6 @@ public class RandallMovement : MonoBehaviour
     private float damageTime = 0.3f;
     private float damageTimer;
     public GameObject[] hearts;
-
 
     //animation values
     public bool walking;
@@ -158,6 +158,10 @@ public class RandallMovement : MonoBehaviour
             {
                 currentCheckpoint -= 7;
             }
+            else if (currentCheckpoint == 8)
+            {
+                currentCheckpoint -= 8;
+            }
             rb.transform.position = CheckPoints[currentCheckpoint].position;
             saveFile.Close();
         }
@@ -170,6 +174,7 @@ public class RandallMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             bodyanimator.SetTrigger("attack");
+            AudioSource.PlayClipAtPoint(soundEffects[0], Camera.main.transform.position);
             Debug.Log("attack");         
         }
         if (onGround == true)
@@ -449,6 +454,7 @@ public class RandallMovement : MonoBehaviour
         {
             if (cooldownreset >= firecooldown && currentMNA >= 3)
             {
+                AudioSource.PlayClipAtPoint(soundEffects[2], Camera.main.transform.position);
                 GameObject ashaTemp = Instantiate(asha, bulletSpawn.position, bulletSpawn.rotation);
                 Rigidbody2D rb = ashaTemp.GetComponent<Rigidbody2D>();
                 rb.AddForce(bulletSpawn.right * AGI, ForceMode2D.Impulse);
@@ -461,6 +467,7 @@ public class RandallMovement : MonoBehaviour
         {
             if (cooldownreset >= firecooldown && currentMNA >= 3)
             {
+                AudioSource.PlayClipAtPoint(soundEffects[2], Camera.main.transform.position);
                 GameObject lithaTemp = Instantiate(litha, bulletSpawn.position, bulletSpawn.rotation);
                 Rigidbody2D rb = lithaTemp.GetComponent<Rigidbody2D>();
                 rb.AddForce(bulletSpawn.right * AGI, ForceMode2D.Impulse);
@@ -473,6 +480,7 @@ public class RandallMovement : MonoBehaviour
         {
             if (cooldownreset >= firecooldown && currentMNA >= 3)
             {
+                AudioSource.PlayClipAtPoint(soundEffects[1], Camera.main.transform.position);
                 GameObject sestaTemp = Instantiate(sesta, bulletSpawn.position, bulletSpawn.rotation);
                 Rigidbody2D rb = sestaTemp.GetComponent<Rigidbody2D>();
                 rb.AddForce(bulletSpawn.right * AGI, ForceMode2D.Impulse);
@@ -485,6 +493,7 @@ public class RandallMovement : MonoBehaviour
         {
             if (cooldownreset >= firecooldown && currentMNA >= 3)
             {
+                AudioSource.PlayClipAtPoint(soundEffects[3], Camera.main.transform.position);
                 GameObject cristaTemp = Instantiate(crista, bulletSpawn.position, bulletSpawn.rotation);
                 Rigidbody2D rb = cristaTemp.GetComponent<Rigidbody2D>();
                 rb.AddForce(bulletSpawn.right * AGI, ForceMode2D.Impulse);
@@ -588,6 +597,7 @@ public class RandallMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Spirit" || collision.gameObject.tag == "Meanie")
         {
+            AudioSource.PlayClipAtPoint(soundEffects[4], Camera.main.transform.position);
             changeHP(-1);
             bodyanimator.SetTrigger("hurt");
             damageShader.SetVector("_Fade", new Vector3(20.0f, 0.0f, 0.0f));
@@ -649,8 +659,12 @@ public class RandallMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "main menu trigger")
         {
-            
             SceneManager.LoadScene("MainMenu");
+        }
+        else if (collision.gameObject.tag == "level 2 trigger")
+        {
+            saveGame(8);
+            SceneManager.LoadScene("Level2");
         }
     }
 
