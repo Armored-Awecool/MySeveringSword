@@ -323,6 +323,7 @@ public class RandallMovement : MonoBehaviour
 
     public void changeHP(int change)
     {
+        hpChecker();
         currentVIT += change;
         if (currentVIT > VIT)
         {
@@ -609,6 +610,7 @@ public class RandallMovement : MonoBehaviour
             damageShader.SetVector("_Fade", new Vector3(20.0f, 0.0f, 0.0f));
             damaged = true;
             damageTimer = 0.0f;
+            Destroy(collision.gameObject);
             hpChecker();
         }
         else if (collision.gameObject.tag == "LoadVillageLeft")
